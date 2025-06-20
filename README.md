@@ -19,7 +19,7 @@ A clean and efficient Python script that organizes your files into categorized f
 ## 📦 Supported File Categories
 
 | Category     | File Extensions                                                                 |
-|--------------|----------------------------------------------------------------------------------|
+|--------------|---------------------------------------------------------------------------------|
 | Documents    | `.pdf`, `.docx`, `.doc`, `.txt`, `.pptx`, `.ppt`, `.xlsx`, `.xls`, `.csv`       |
 | Images       | `.jpg`, `.jpeg`, `.png`, `.gif`, `.bmp`, `.svg`, `.webp`                        |
 | Videos       | `.mp4`, `.avi`, `.mov`, `.mkv`, `.flv`, `.wmv`                                  |
@@ -39,6 +39,11 @@ A clean and efficient Python script that organizes your files into categorized f
 - Creates a `organizer.log` file with all actions.
 
 ---
+### 🗃️ organizer.log
+
+![image](https://github.com/user-attachments/assets/9939fff6-cb3f-42b1-9380-f3395862eb6d)
+
+---
 
 ## 📂 Example Output Structure
 
@@ -53,7 +58,7 @@ Downloads/
 ├── Archives/
 │   └── old_files.zip
 ├── Others/
-│   └── file.abc
+│   └── file.jar
 ├── organizer.log
 └── organizer.py
 ```
