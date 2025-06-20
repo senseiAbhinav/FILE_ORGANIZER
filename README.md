@@ -52,6 +52,8 @@ Downloads/
 │   └── script.py
 ├── Archives/
 │   └── old_files.zip
+├── Others/
+│   └── file.abc
 ├── organizer.log
 └── organizer.py
 ```
