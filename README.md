@@ -31,6 +31,19 @@ A clean and efficient Python script that organizes your files into categorized f
 
 ---
 
+## 📚 Libraries Used
+
+This project uses only built-in Python libraries — no external packages required:
+
+- `os` — Interact with the operating system (paths, directories)
+- `shutil` — High-level file operations (e.g., move files)
+- `logging` — Built-in logging to console and file
+- `pathlib` — Modern, object-oriented file system paths
+
+Compatible with Python **3.6+**
+
+---
+
 ### 🔍 What It Does
 
 - Organizes files **by type** into folders like `Documents/`, `Images/`, `Videos/`, etc.
