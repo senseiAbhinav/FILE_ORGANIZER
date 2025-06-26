@@ -1,6 +1,7 @@
 import os
 import shutil
 import logging
+import argparse
 from pathlib import Path
 
 # --- Setup Logging ---
@@ -76,7 +77,23 @@ def organize_files(target_dir: str):
 
 # --- Script Entry Point ---
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+        description="Organize files in a directory into categorized folders."
+    )
+    parser.add_argument(
+        "directory",
+        nargs="?",
+        help="Path to the directory to organize (optional)."
+    )
+    args = parser.parse_args()
+
     print("📁 File Organizer Script")
-    user_input = input("Enter the full path of the directory to organize (leave blank for current directory): ").strip()
-    directory_to_organize = user_input if user_input else os.getcwd()
+
+    # Use CLI argument if provided, otherwise ask user
+    if args.directory:
+        directory_to_organize = args.directory.strip()
+    else:
+        user_input = input("Enter the full path of the directory to organize (leave blank for current directory): ").strip()
+        directory_to_organize = user_input if user_input else os.getcwd()
+
     organize_files(directory_to_organize)
